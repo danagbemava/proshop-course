@@ -1,0 +1,23 @@
+{
+  "name": "proshop-course",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danagbemava/proshop-course.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danagbemava/proshop-course/issues"
+  },
+  "homepage": "https://github.com/danagbemava/proshop-course#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
