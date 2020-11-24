@@ -4,6 +4,7 @@ import colors from 'colors';
 import connectDB from './config/db.js';
 
 import productsRoute from './routes/productsRoute.js';
+import usersRoute from './routes/userRoutes.js';
 
 import { notFound, errorHandler } from './middleware/errorMiddleware.js';
 
@@ -13,11 +14,14 @@ connectDB();
 
 const app = express();
 
+app.use(express.json());
+
 app.get('/', (req, res) => {
   res.send('Api is up');
 });
 
 app.use('/api/products', productsRoute);
+app.use('/api/users', usersRoute);
 
 app.use(notFound);
 
